@@ -5,6 +5,6 @@ http.createServer(function(req,res){
     "Content-Type" : "text/html"
   });
   res.end("Hello World");
-}).listen(8000);
+}).listen(process.env.PORT);
  
 console.log('Server is running at port 8000');
